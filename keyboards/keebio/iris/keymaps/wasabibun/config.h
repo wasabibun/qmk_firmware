@@ -33,3 +33,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_SPLIT
 #define RGBLIGHT_SLEEP
 #define RGB_DISABLE_WHEN_USB_SUSPENDED
+#define TAPPING_TOGGLE 2
