@@ -56,26 +56,25 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                     //┌────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────┐                          ┌────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────┐
 [_LAYER1] = LAYOUT(    TD(TD_F12_RESET),      KC_F1,            KC_F2,          KC_F3,           KC_F4,           KC_F5,                                      KC_F6,           KC_F7,           KC_F8,           KC_F9,           KC_F10,         KC_F11,         
                     //├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤                          ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤
-                            KC_TAB,           KC_NO,            KC_NO,          KC_PGUP,         KC_NO,           KC_NO,                                      KC_NO,           KC_NO,           KC_UP,           KC_NO,           KC_NO,          KC_BSPC,
+                            KC_TAB,           KC_NO,            KC_NO,          KC_PGUP,         KC_NO,           KC_EQL,                                     KC_PLUS,         KC_NO,           KC_UP,           KC_NO,           KC_NO,          KC_BSPC,
                     //├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤                          ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤
                       TD(TD_LSHIFT_CAPS),     KC_NO,            KC_HOME,        KC_PGDN,         KC_END,          KC_UNDS,                                    KC_MINS,         KC_LEFT,         KC_DOWN,         KC_RGHT,         KC_NO,          KC_NO,
                     //├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤────────┐        ┌────────├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤  
-                            KC_LCTL,          KC_NO,            KC_NO,          KC_PSCR,         KC_LPRN,         KC_RPRN,    KC_NO,            KC_SPC,       KC_LCBR,         KC_RCBR,         KC_LBRC,         KC_RBRC,         KC_NO,     TD(TD_RSHIFT_CAPS),
+                            KC_LCTL,          KC_NO,            KC_NO,          KC_PSCR,         KC_LBRC,         KC_RBRC,    KC_NO,            KC_SPC,       KC_LCBR,         KC_RCBR,         KC_NO,           KC_NO,           KC_NO,       TD(TD_RSHIFT_CAPS),
                     //└────────────────┴────────────────┴────────────────┴───────┬────────┴───────┬────────┴───────┬────────┴─────┬──┘        └───┬────┴───────────┬────┴───────────┬────┴─────────┬──────┴────────────────┴────────────────┴────────────────┘
-                                                                                        KC_NO,           TT(0),          KC_ENT,                        KC_SPC,           TT(2),         KC_NO      ),
+                                                                                        KC_LGUI,         TT(0),          KC_ENT,                        KC_SPC,           TT(2),         KC_RALT      ),
                     //                                                           └────────────────┴────────────────┴──────────────┘               └────────────────┴────────────────┴──────────────┘  
                     //┌────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────┐                          ┌────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────┐
 [_LAYER2] = LAYOUT(         KC_GRV,           KC_1,             KC_2,           KC_3,            KC_4,            KC_5,                                       KC_6,            KC_7,            KC_8,            KC_9,            KC_0,           KC_BSLS,
                     //├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤                          ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤
-                            KC_TAB,           RGB_TOG,          KC_NO,          KC_NO,           KC_NO,           KC_NO,                                      KC_NO,           KC_NO,           KC_NO,           KC_NO,           KC_NO,          KC_BSPC,
+                            KC_TAB,           RGB_TOG,          KC_NO,          KC_NO,           KC_NO,           KC_EQL,                                     KC_PLUS,         KC_4,            KC_5,            KC_6,           KC_NO,          KC_BSPC,
                     //├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤                          ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤
-                      TD(TD_LSHIFT_CAPS),     KC_MPRV,          KC_MNXT,        KC_NO,           KC_VOLU,         KC_UNDS,                                    KC_MINS,         RGB_VAI,         KC_NO,           RGB_HUI,         RGB_SAI,        KC_NO, 
+                      TD(TD_LSHIFT_CAPS),     KC_MPRV,          KC_MNXT,        KC_NO,           KC_NO,          KC_UNDS,                                     KC_MINS,         KC_1,            KC_2,            KC_3,           RGB_SAI,        KC_NO, 
                     //├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤────────┐        ┌────────├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤  
-                            KC_LCTL,          KC_MSTP,          KC_MPLY,        KC_NO,           KC_VOLD,         KC_EQL,     KC_NO,            KC_SPC,       KC_PLUS,         RGB_VAD,         KC_NO,           RGB_HUD,         RGB_SAD,   TD(TD_RSHIFT_CAPS),
+                            KC_LCTL,          KC_MSTP,          KC_MPLY,        KC_NO,           KC_LPRN,        KC_RPRN,    KC_NO,             KC_SPC,       KC_NO,           KC_0,            KC_COMM,         KC_DOT,         KC_SLSH,   TD(TD_RSHIFT_CAPS),
                     //└────────────────┴────────────────┴────────────────┴───────┬────────┴───────┬────────┴───────┬────────┴─────┬──┘        └───┬────┴───────────┬────┴───────────┬────┴─────────┬──────┴────────────────┴────────────────┴────────────────┘
-                                                                                        KC_NO,          KC_TRNS,        KC_ENT,                         KC_SPC,           TO(0),         KC_NO      )    
+                                                                                        KC_LGUI,         TO(1),        KC_ENT,                         KC_SPC,           TO(0),         KC_RALT      )    
                     //                                                           └────────────────┴────────────────┴──────────────┘               └────────────────┴────────────────┴──────────────┘  
-                                                                                                    /*^KC_TRNS issue going back to _LAYER1*/
 
 };
 
@@ -85,7 +84,7 @@ void matrix_init_user(void)
     // set the layer color at initalization, because it won't set otherwise
     // rgblight_enable_noeeprom(); // enables Rgb, without saving settings
     rgblight_enable();
-    rgblight_sethsv_noeeprom(250, 160, 255);
+    rgblight_sethsv_noeeprom(250, 180, 255);
     rgblight_mode_noeeprom(RGBLIGHT_MODE_BREATHING+3);
 #endif
 }
@@ -122,11 +121,11 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
             case _LAYER1:
                 if (clockwise)
                 {
-                    tap_code16(C(KC_Y)); // CTRL+Y -> Redo
+                    tap_code16(LCTL(KC_Y)); // CTRL+Y -> Redo
                 } 
                 else 
                 {
-                    tap_code16(C(KC_Z)); // CTRL+Z -> Undo
+                    tap_code16(LCTL(KC_Z)); // CTRL+Z -> Undo
                 }
                 break;
             case _LAYER2:
